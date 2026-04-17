@@ -6,9 +6,10 @@
     "start": "expo start",
     "android": "expo run:android",
     "android:prebuild": "expo prebuild --platform android",
-    "android:bundle": "cd android && gradlew bundleRelease",
-    "android:aab": "npx expo prebuild --platform android && cd android && gradlew.bat bundleRelease",
+    "android:bundleRelease": "cd android && gradlew bundleRelease",
+    "android:aab": "npx expo prebuild --platform android && cd android && gradlew bundleRelease",
     "ios": "expo run:ios",
+    "ios:bundleRelease": "eas build --platform ios --profile production",
     "web": "expo start --web",
     "bundle": "expo export --output-dir dist",
     "build": "npx expo export --output-dir ./dist"
