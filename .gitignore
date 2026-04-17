@@ -27,3 +27,8 @@ expo-debug.log*
 .vscode/
 .idea/
 *.iml
+.aab
+.dist/
+.bundle/
+android/
+ios/
