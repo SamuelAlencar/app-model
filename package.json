@@ -6,10 +6,11 @@
     "start": "expo start",
     "android": "expo run:android",
     "android:prebuild": "expo prebuild --platform android",
-    "android:bundleRelease": "cd android && gradlew bundleRelease",
-    "android:aab": "npx expo prebuild --platform android && cd android && gradlew bundleRelease",
+    "android:bundleRelease": "set NODE_ENV=production&& npx expo prebuild --platform android && cd android && gradlew.bat bundleRelease",
+    "android:aab": "set NODE_ENV=production&& npx expo prebuild --platform android && cd android && gradlew.bat bundleRelease",
     "ios": "expo run:ios",
     "ios:bundleRelease": "eas build --platform ios --profile production",
+    "build:release": "npm run android:bundleRelease && npm run ios:bundleRelease",
     "web": "expo start --web",
     "bundle": "expo export --output-dir dist",
     "build": "npx expo export --output-dir ./dist"

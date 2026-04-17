@@ -105,8 +105,19 @@ npm run web
 
 ### Gerar bundle de produção
 
+Android:
 ```
-npx expo export --output-dir ./dist
+npm run android:bundleRelease
+```
+
+iOS:
+```
+npm run ios:bundleRelease
+```
+
+Ambos:
+```
+npm run build:release
 ```
 
 ## Gerar builds para publicação
