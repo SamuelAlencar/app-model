@@ -15,7 +15,14 @@
     "android": {
       "adaptiveIcon": {
         "backgroundColor": "#ffffff"
+      },
+      "package": "com.samuelalencar.appmodel"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "73423b84-47d3-467a-a7fe-6ea9b6438be2"
       }
-    }
+    },
+    "owner": "samuelalencar"
   }
 }
